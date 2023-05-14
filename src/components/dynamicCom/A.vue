@@ -1,16 +1,13 @@
 <template>
   <div>
-    {{ name }}
+    {{ str }}
   </div>
 </template>
 
 <script setup lang='ts'>
 import { ref,reactive } from 'vue'
 
-const obj = reactive({name: 'zhcj'})
-
-const {name} = await Promise.resolve(obj)
-
+const str = ref('ji你太美')
 
 </script>
 
