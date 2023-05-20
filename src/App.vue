@@ -1,13 +1,12 @@
 <template>
   <div>
-    <zhcj></zhcj>
+    <button @click="flag = !flag">change flag</button>
+    <div>{{flag}}</div>
   </div>
 </template>
 
 <script setup lang='ts'>
-import { ref,reactive, } from 'vue'
-import zhcj from './App'
-
+let flag = ref<boolean>(false)
 
 </script>
 
