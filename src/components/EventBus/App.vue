@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <A @on-click="getFlag"></A>
