@@ -7,7 +7,9 @@
 <script setup lang='ts'>
 import { ref,reactive } from 'vue'
 
-const name = ref<string>('zhcj')
+const obj = reactive({name: 'zhcj'})
+
+const {name} = await Promise.resolve(obj)
 
 
 </script>
