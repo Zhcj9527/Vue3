@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang='ts'>
-import { ref,reactive,defineAsyncComponent } from 'vue'
+import { defineAsyncComponent } from 'vue'
 const test = defineAsyncComponent(() => import('./components/test.vue'))
 </script>
 
