@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang='ts'>
-import { ref,reactive, Directive } from 'vue'
+import { Directive } from 'vue'
 // permission
 
 localStorage.setItem('userId', 'xiaoman-zs')
