@@ -1,13 +1,16 @@
 import { createApp } from 'vue'
-import './style.css'
+// import './style.css'
 import App from './App.vue'
 import testVue from './components/test.vue'
 import Loading from './components/plugins'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 const app = createApp(App)
 // console.log(app);
 // 注册使用插件
 app.use(Loading)
+app.use(ElementPlus)
 // 定义全局组件
 app.component('Test', testVue) // 组件名，就是引入的组件标签名,,要在挂载之前就全局注册使用
 // 定义全局属性和方法,,***此种方法需要声明declare一下***
