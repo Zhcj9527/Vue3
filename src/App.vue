@@ -2,8 +2,8 @@
   <div>
     zhcj <br><br>
     <!-- to==>path -->
-    <router-link replace to="/">Login</router-link>
-    <router-link replace style="margin-left: 10px;" to="/register">Register</router-link>
+    <!-- <router-link replace to="/">Login</router-link>
+    <router-link replace style="margin-left: 10px;" to="/register">Register</router-link> -->
     <!-- to==>name -->
     <!-- <router-link :to="{name: 'Login'}">Login</router-link>
     <router-link style="margin-left: 10px;" :to="{name:'Register'}">Register</router-link> -->
