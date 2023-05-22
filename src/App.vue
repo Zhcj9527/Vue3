@@ -11,14 +11,18 @@
     <p>
       <button @click="reset">reset</button>
     </p>
+    <p>
+      BASE: {{ BASE.baseCurrent }}
+    </p>
   </div>
 </template>
 
 <script setup lang='ts'>
 import { ref, reactive } from 'vue'
-import { useTestStore } from './store';
+import { useTestStore,useBaseStore } from './store';
 
 const Test = useTestStore()
+const BASE = useBaseStore()
 
  // 类似watchEffect，侦听state的值
 /* Test.$subscribe((args, state) => {

@@ -21,7 +21,7 @@ const Login = (): Promise<User> => {
     }, 2000)
   })
 }
-
+// TEST
 export const useTestStore = defineStore(Names.Test, {
   state: () => {
     return {
@@ -54,5 +54,20 @@ export const useTestStore = defineStore(Names.Test, {
     setName(name: string) {
       this.name = name
     }
+  }
+})
+
+// BASE
+export const useBaseStore = defineStore(Names.BASE, {
+  state: () => {
+    return {
+      baseCurrent: 1
+    }
+  },
+  getters: {
+
+  },
+  actions: {
+
   }
 })
