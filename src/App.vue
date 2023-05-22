@@ -2,16 +2,18 @@
   <div>
     zhcj <br><br>
     <!-- to==>path -->
-    <!-- <router-link to="/">Login</router-link>
-    <router-link style="margin-left: 10px;" to="/register">Register</router-link> -->
+    <router-link replace to="/">Login</router-link>
+    <router-link replace style="margin-left: 10px;" to="/register">Register</router-link>
     <!-- to==>name -->
     <!-- <router-link :to="{name: 'Login'}">Login</router-link>
     <router-link style="margin-left: 10px;" :to="{name:'Register'}">Register</router-link> -->
     <!-- 编程式导航 -->
     <!-- <button @click="toPage('/')">Login</button>
     <button @click="toPage('/register')" style="margin-left: 10px;">Register</button> -->
-    <button @click="toPage('Login')">Login</button>
-    <button @click="toPage('Register')" style="margin-left: 10px;">Register</button>
+    <!-- <button @click="toPage('Login')">Login</button>
+    <button @click="toPage('Register')" style="margin-left: 10px;">Register</button> -->
+    <button style="margin-left: 10px;" @click="next">Next</button>
+    <button style="margin-left: 10px;" @click="prev">prev</button>
     <hr>
     <router-view></router-view>
   </div>
@@ -32,6 +34,14 @@ const toPage = (url: string) => {
     // path: url
     name: url
   })
+}
+
+const next = () => {
+  router.go(1)
+}
+
+const prev = () => {
+  router.back()
 }
 
 </script>
