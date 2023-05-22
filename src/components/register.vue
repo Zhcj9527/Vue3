@@ -1,0 +1,20 @@
+<template>
+  <div class="register">
+    Register
+  </div>
+</template>
+
+<script setup lang='ts'>
+import { ref,reactive } from 'vue'
+
+</script>
+
+<style scoped>
+.register {
+  background: red;
+  height: 400px;
+  width: 400px;
+  font-size: 20px;
+  color: white;
+}
+</style>
