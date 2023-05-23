@@ -13,11 +13,18 @@
     <button @click="toPage('Register')" style="margin-left: 10px;">Register</button> -->
     <!-- <button style="margin-left: 10px;" @click="next">Next</button>
     <button style="margin-left: 10px;" @click="prev">prev</button> -->
-    <router-view></router-view>
+
+    <!-- 路由过渡动效 需要用到动态组件 -->
+    <router-view #default="{route, Component}">
+      <transition :enter-active-class="`animate__animated  ${route.meta.transition}`">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
   </div>
 </template>
 
 <script setup lang='ts'>
+import 'animate.css';
 
 </script>
 
