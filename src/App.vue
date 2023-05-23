@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="zhcj m-1">
+      zhcj
+    </div>
     <!-- to==>path -->
     <!-- <router-link replace to="/">Login</router-link>
     <router-link replace style="margin-left: 10px;" to="/register">Register</router-link> -->
